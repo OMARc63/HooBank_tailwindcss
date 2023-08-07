@@ -15,12 +15,15 @@ import styles from "./style";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div
+      className={`${styles.paddingX} ${styles.flexCenter} fixed w-full z-50`}
+      style={{ backdropFilter: "blur(10px)" }}
+    >
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
     </div>
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`${styles.flexStart} pt-20`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
       </div>

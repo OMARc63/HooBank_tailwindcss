@@ -13,7 +13,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins text-white text-[16px] ${
+            className={`font-poppins text-white text-[16px] hover:text-secondary ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             }`}
           >
